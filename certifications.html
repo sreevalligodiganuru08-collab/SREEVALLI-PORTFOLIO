@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Certifications | Sreevalli Godiganuru</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<nav class="navbar">
+
+    <div class="logo">
+        SV
+    </div>
+
+    <div class="nav-actions">
+
+        <a href="index.html#certifications" class="back-portfolio-btn">
+
+            <i class="fas fa-arrow-left"></i>
+
+            Back to Portfolio
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+<section class="section cert-gallery-section">
+
+<div class="gallery-header">
+
+<h1 class="section-title">
+My Certifications
+</h1>
+
+<p class="gallery-subtitle">
+A collection of certifications representing my continuous learning journey.
+</p>
+
+</div>
+
+
+<div class="certificate-gallery">
+
+
+
+
+<div class="certificate-card">
+
+<img src="assets/cert1.jpg">
+
+<h3>C Programming</h3>
+
+</div>
+
+
+
+
+<div class="certificate-card">
+
+<img src="assets/cert2.jpg">
+
+<h3>Machine Learning</h3>
+
+</div>
+
+
+
+
+<div class="certificate-card">
+
+<img src="assets/cert3.jpg">
+
+<h3>Ethical Hacking & Cybersecurity</h3>
+
+</div>
+
+
+
+
+<div class="certificate-card">
+
+<img src="assets/cert4.jpg">
+
+<h3>Predictive Analysis</h3>
+
+</div>
+
+
+
+
+<div class="certificate-card">
+
+<img src="assets/cert5.jpg">
+
+<h3>Advanced Excel</h3>
+
+</div>
+
+
+
+
+<div class="certificate-card">
+
+<img src="assets/cert6.jpg">
+
+<h3>Poster Presentation</h3>
+
+</div>
+
+
+
+
+<div class="certificate-card">
+
+<img src="assets/cert7.jpg">
+
+<h3>Hackathon (VITS)</h3>
+
+</div>
+
+
+
+
+<div class="certificate-card">
+
+<img src="assets/cert8.jpg">
+
+<h3>Ideathon 2025</h3>
+
+</div>
+
+
+
+
+<div class="certificate-card">
+
+<img src="assets/cert9.jpg">
+
+<h3>Hackfest (Siddharth Instituite)</h3>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+<!-- IMAGE POPUP -->
+
+<div class="cert-popup" id="certPopup">
+
+<img id="popupImg">
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+<script>
+
+document.querySelectorAll(".certificate-card img").forEach(img=>{
+
+img.onclick=()=>{
+
+document.getElementById("popupImg").src=img.src;
+
+document.getElementById("certPopup").style.display="flex";
+
+}
+
+})
+
+document.getElementById("certPopup").onclick=()=>{
+
+document.getElementById("certPopup").style.display="none";
+
+}
+
+</script>
+
+</body>
+
+</html>
